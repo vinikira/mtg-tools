@@ -3,6 +3,7 @@
  */
 import React from 'react';
 import Counter from '../components/Counter.js';
+import './Player.css';
 
 function Player () {
     this.state = {}
@@ -14,8 +15,8 @@ Player.constructor = Player;
 Player.prototype.render = function () {
     const { name } = this.props;
     return (
-	<div>
-	  <p>{name}</p>
+	<div className="player">
+	    <p>{name}</p>
 	  <Counter />
 	</div>
     );

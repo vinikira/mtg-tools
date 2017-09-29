@@ -3,9 +3,14 @@
  */
 import React from 'react';
 
+const buttonStyle = {
+    color: 'blue',
+    backgroundColor: 'gray'
+};
+
 const CounterButton = ({ countFunction, text }) => {
     return (
-	    <button onClick={countFunction}>{text}</button>
+	    <button style={buttonStyle} onClick={countFunction}>{text}</button>
     );
 }
 
